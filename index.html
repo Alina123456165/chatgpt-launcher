@@ -5,21 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>ChatGPT App</title>
+  <title>ChatGPT</title>
 
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="theme-color" content="#ffffff">
   <meta name="color-scheme" content="light">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ChatGPT">
 
   <style>
-    :root {
-      color-scheme: light;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #ffffff;
-      color: #000000;
-    }
-
     * {
       box-sizing: border-box;
     }
@@ -27,10 +21,10 @@
     html, body {
       margin: 0;
       padding: 0;
-      width: 100%;
       min-height: 100%;
       background: #ffffff !important;
       color: #000000 !important;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
     body {
@@ -59,63 +53,40 @@
       justify-content: center;
       font-size: 42px;
     }
-h
+
     h1 {
       margin: 0;
       font-size: 26px;
-      color: #000000;
-    }
-
-    p {
-      margin: 10px 0 30px;
-      color: #666666;
-      font-size: 14px;
-      line-height: 1.5;
     }
 
     .button {
       display: inline-block;
-      padding: 16px 26px;
-      border: none;
+      margin-top: 28px;
+      padding: 16px 30px;
       border-radius: 14px;
       background: #000000;
       color: #ffffff;
       text-decoration: none;
       font-size: 16px;
       font-weight: 600;
-      cursor: pointer;
       -webkit-tap-highlight-color: transparent;
     }
 
     .button:active {
-      transform: scale(0.97);
-    }
-
-    .footer {
-      margin-top: 24px;
-      color: #777777;
-      font-size: 12px;
+      opacity: 0.75;
     }
   </style>
 </head>
 
 <body>
   <main class="container">
-
     <div class="logo">🤖</div>
 
     <h1>ChatGPT</h1>
 
-    <p>Open ChatGPT in app mode</p>
-
     <a class="button" href="https://chatgpt.com/">
       Open App
     </a>
-
-    <div class="footer">
-      Add to Home Screen for an app-like experience
-    </div>
-
   </main>
 </body>
 </html>
