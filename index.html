@@ -1,112 +1,121 @@
-```html
+
 <!DOCTYPE html>
-<html lang="en" style="background:#000 !important;color-scheme:dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>ChatGPT App</title>
+
+  <title>ChatGPT</title>
 
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="theme-color" content="#000000">
-  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
 
   <style>
-    :root, html, body {
-      margin: 0 !important;
-      padding: 0 !important;
-      width: 100%;
-      min-height: 100%;
-      background-color: #000 !important;
-      color: #fff !important;
-      color-scheme: dark;
-    }
-
-    html, body {
-      height: 100%;
-      overflow: hidden;
-    }
-
-    body {
+    :root {
+      color-scheme: light;
+      background: #ffffff;
+      color: #000000;
       font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    .container {
-      position: fixed;
-      inset: 0;
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      background: #ffffff !important;
+      color: #000000 !important;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
+    }
+
+    .container {
       padding: 24px;
-      background-color: #000 !important;
-      color: #fff;
+      max-width: 420px;
     }
 
     .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 24px;
-      background: #111;
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 20px;
+      border-radius: 22px;
+      background: #f2f2f2;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 40px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 40px rgba(0,0,0,.6);
+      font-size: 36px;
     }
 
     h1 {
       margin: 0;
       font-size: 26px;
-      color: #fff;
+      color: #000000;
     }
 
     p {
-      color: #aaa;
-      margin: 10px 0 30px;
+      margin: 10px 0 24px;
+      color: #666666;
       font-size: 14px;
+      line-height: 1.5;
     }
 
-    button {
-      border: 0;
-      background: #fff;
-      color: #000;
-      padding: 16px 22px;
+    .button {
+      display: inline-block;
+      padding: 15px 22px;
       border-radius: 14px;
+      background: #000000;
+      color: #ffffff;
+      text-decoration: none;
       font-size: 16px;
       font-weight: 600;
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
     }
 
-    button:active { transform: scale(.97); }
+    .button:active {
+      opacity: 0.8;
+    }
 
     .footer {
-      position: absolute;
-      bottom: 18px;
-      color: #777;
+      margin-top: 24px;
+      color: #777777;
       font-size: 12px;
     }
   </style>
-</head>
-<body style="background:#000 !important">
-  <div class="container">
-    <div class="logo">🤖</div>
-    <h1>ChatGPT</h1>
-    <p>Open ChatGPT in app mode</p>
-    <button type="button" onclick="openGPT()">Open App</button>
-    <div class="footer">Add to Home Screen for full app feel</div>
-  </div>
 
   <script>
-    function openGPT() {
-      window.location.href = "https://chatgpt.com/";
-    }
+    window.location.replace("https://chatgpt.com/");
   </script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="logo">🤖</div>
+
+    <h1>ChatGPT</h1>
+
+    <p>
+      Opening ChatGPT...
+      If it doesn't open automatically, tap below.
+    </p>
+
+    <a class="button" href="https://chatgpt.com/">
+      Open ChatGPT
+    </a>
+
+    <div class="footer">
+      Your login is managed securely by ChatGPT.
+    </div>
+  </main>
 </body>
-</html> 
-``
+</html>
